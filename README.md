@@ -2,6 +2,8 @@
 - [Acknowledgements and Project Purpose](#acknowledgements-and-project-purpose)
 - [Marimo vs. Jupyter: Project Focus](#marimo-vs-jupyter-project-focus)
   - [Initial impressions](#initial-impressions)
+    - [Quarto integration](#quarto-integration)
+  - [Jupyter vs. Marimo](#jupyter-vs-marimo)
   - [Tracking My Experience](#tracking-my-experience)
 - [References](#references)
 
@@ -31,6 +33,12 @@ Marimo and Jupyter serve somewhat different audiences and use cases. Jupyter is 
 - Built-in UI elements and reactive execution, eliminating hidden state[6][8].
 - Git-friendly, reproducible, and easily shareable as web apps[5][6][7].
 - Automatic dependency tracking and sandboxed execution.
+
+#### Quarto integration
+
+https://marimo-team.github.io/quarto-marimo/
+
+### Jupyter vs. Marimo
 
 For a detailed technical comparison, see:
 

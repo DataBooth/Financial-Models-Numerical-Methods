@@ -25,7 +25,7 @@ from FMNM.FFT import fft_Lewis, IV_from_Lewis
 
 
 class VG_pricer:
-    """
+    r"""
     Closed Formula.
     Monte Carlo.
     Finite-difference PIDE: Explicit-implicit scheme, with Brownian approximation

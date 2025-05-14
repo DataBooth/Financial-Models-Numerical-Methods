@@ -24,7 +24,7 @@ from functools import partial
 
 
 class NIG_pricer:
-    """
+    r"""
     Closed Formula.
     Monte Carlo.
     Finite-difference PIDE: Explicit-implicit scheme, with Brownian approximation

@@ -41,3 +41,23 @@ import marimo as mo
 at the end of the notebook?? Removed and included at top od the notebook - seemed to fix the issue.
 
 Nice being able to run with the markdown version of the notebook (see [justfile](justfile) for commands).
+
+
+Tried using the Marimo extension for VS Code and it seemed really slow and had issues.
+
+
+Also seeing this error - is it real?
+
+/Users/mjboothaus/code/github/databooth/Financial-Models-Numerical-Methods/src/FMNM/Kalman_filter.py:316: SyntaxWarning: invalid escape sequence '\p'
+  label="Kalman Std Dev: $\pm 1 \sigma$",
+/Users/mjboothaus/code/github/databooth/Financial-Models-Numerical-Methods/src/FMNM/Merton_pricer.py:33: SyntaxWarning: invalid escape sequence '\i'
+  + \int[ V(x+y) nu(dy) ] -(r+lam)V
+/Users/mjboothaus/code/github/databooth/Financial-Models-Numerical-Methods/src/FMNM/NIG_pricer.py:33: SyntaxWarning: invalid escape sequence '\i'
+  + \int[ V(x+y) nu(dy) ] -(r+lam)V
+/Users/mjboothaus/code/github/databooth/Financial-Models-Numerical-Methods/src/FMNM/VG_pricer.py:34: SyntaxWarning: invalid escape sequence '\i'
+  + \int[ V(x+y) nu(dy) ] -(r+lam)V
+  
+
+  Seems had to "wrap" these as raw strings with r-prefix and then ok.
+
+

@@ -1,4 +1,4 @@
-MARIMO_DIR := "mo-experience"
+MARIMO_DIR := "marimo-experience"
 
 # List all available recipes (default)
 default:

@@ -1,218 +1,76 @@
-Financial-Models-Numerical-Methods 
-==================================
 
+- [Acknowledgements and Project Purpose](#acknowledgements-and-project-purpose)
+- [Marimo vs. Jupyter: Project Focus](#marimo-vs-jupyter-project-focus)
+  - [Initial impressions](#initial-impressions)
+  - [Tracking My Experience](#tracking-my-experience)
+- [References](#references)
 
-This is a collection of [Jupyter notebooks](https://jupyter.org/) based on different topics in the area of quantitative finance.
 
+## Acknowledgements and Project Purpose
 
-### Is this a tutorial?
+This repository is **forked from [cantaro86/Financial-Models-Numerical-Methods](https://github.com/cantaro86/Financial-Models-Numerical-Methods)**, a project by [Nicola Cantarutti](https://github.com/cantaro86) and contributors. Their extensive and well-documented work on quantitative finance models forms the foundation for this repo-many thanks to the original authors for making their research and code available under open source terms.
 
-Almost! :) 
+See the original [README](README-original.md) for the full project description.
 
-This is just a collection of topics and algorithms that in my opinion are interesting.     
+---
 
-It contains several topics that are not so popular nowadays, but that can be very powerful. 
-Usually, topics such as PDE methods, Lévy processes, Fourier methods or Kalman filter are not very popular among practitioners, who prefers to work with more standard tools.     
-The aim of these notebooks is to present these interesting topics, by showing their practical application through an interactive python implementation.
+## Marimo vs. Jupyter: Project Focus
 
+This fork is being used as a **test case for evaluating Marimo** ([marimo.io](https://marimo.io)), a next-generation Python notebook environment, as an alternative to Jupyter notebooks. The primary goals are:
 
-### Who are these notebooks for?
+- **Porting and running selected notebooks** (starting with “1.1 Black-Scholes numerical methods”) in Marimo.
+- **Documenting the migration process** and any usability differences.
+- **Comparing features, workflows, and limitations** of Marimo and Jupyter for quantitative finance and data science use cases.
+- **Collecting and sharing pros and cons** as discovered through practical use.
 
-Not for absolute beginners. 
+### Initial impressions
 
-These topics require a basic knowledge in stochastic calculus, financial mathematics and statistics. A basic knowledge of python programming is also necessary.
+Marimo and Jupyter serve somewhat different audiences and use cases. Jupyter is deeply embedded in data science and education, with a huge ecosystem and broad tool support. Marimo, by contrast, is designed for reproducibility, interactivity, and maintainability, with features like:
 
-In these notebooks I will not explain what is a call option, or what is a stochastic process, or a partial differential equation.     
-However, every time I will introduce a concept, I will also add a link to the corresponding wiki page or to a reference manual.
-In this way, the reader will be able to immediately understand what I am talking about. 
+- Notebooks as pure Python `.py` files (easy to version and execute as scripts)[6][8].
+- Built-in UI elements and reactive execution, eliminating hidden state[6][8].
+- Git-friendly, reproducible, and easily shareable as web apps[5][6][7].
+- Automatic dependency tracking and sandboxed execution.
 
-These notes are for students in science, economics or finance who have followed at least one undergraduate course in financial mathematics and statistics.       
-Self-taught students or practicioners should have read at least an introductiory book on financial mathematics. 
+For a detailed technical comparison, see:
 
+- [Jupyter vs Marimo: side-by-side (Deepnote)](https://deepnote.com/compare/jupyter-vs-marimo) [1]
+- [JupyterLab vs Marimo: side-by-side (Deepnote)](https://deepnote.com/compare/jupyterlab-vs-marimo) [2]
+- [Marimo FAQ: How is Marimo different from Jupyter?](https://docs.marimo.io/faq/) [6]
+- [Marimo migration guide for Jupyter users](https://docs.marimo.io/guides/coming_from/jupyter/) [8]
+- [EuroPython 2025: Meet Marimo, the next-gen Notebook](https://ep2025.europython.eu/session/meet-marimo-the-next-gen-notebook/)[5]
+- [Reddit: Community discussion on Marimo vs Jupyter](https://www.reddit.com/r/Python/comments/1dvs2d6/reactive_notebook_for_python_an_alternative_to/)[7]
+- [YouTube: Marimo vs Jupyter walkthrough](https://www.youtube.com/watch?v=tLyjRfkyfFg)[3]
+- [LinkedIn: Reuven Lerner’s video on Marimo vs Jupyter](https://www.linkedin.com/posts/reuven_python-notebooks-marimo-vs-jupyter-activity-7318306191527362560-KUxu)[9]
 
-### Why is it worth to read these notes?  
+---
 
-First of all, this is not a book!      
-Every notebook is (almost) independent from the others. Therefore you can select only the notebook you are interested in!
+### Tracking My Experience
 
-```diff
-- Every notebook contains python code ready to use!     
-```
+As I progress through the migration and evaluation, I will:
 
-It is not easy to find on internet examples of financial models implemented in python which are ready to use and well documented.    
-I think that beginners in quantitative finance will find these notebooks very useful!  
+- Update this README (or a dedicated document) with findings, pain points, and advantages discovered.
+- Share code examples and workflow notes for both Marimo and Jupyter.
+- Highlight any unique Marimo features or limitations relevant to financial modeling and reproducible research.
 
-Moreover, Jupyter notebooks are interactive i.e. you can run the code inside the notebook. 
-This is probably the best way to study!
+**If you have thoughts, suggestions, or experience with Marimo or Jupyter in quantitative finance, feel free to open an issue or discussion!**
 
-If you open a notebook with Github or [NBviewer](https://nbviewer.ipython.org), sometimes mathematical formulas are not displayed correctly. 
-For this reason, I suggest you to clone/download the repository. 
+---
 
+*Original repo: [cantaro86/Financial-Models-Numerical-Methods](https://github.com/cantaro86/Financial-Models-Numerical-Methods)*
+*Marimo: [marimo.io](https://marimo.io)*
 
-### Is this series of notebooks complete?
+---
 
-**No!**    
-I will upload more notebooks from time to time. 
+## References
 
-At the moment, I'm interested in the areas of stochastic processes, Kalman Filter, statistics and much more. I will add more interesting notebooks on these topics in the future. 
+- [1]: https://deepnote.com/compare/jupyter-vs-marimo  
+- [2]: https://deepnote.com/compare/jupyterlab-vs-marimo  
+- [3]: https://www.youtube.com/watch?v=tLyjRfkyfFg  
+- [4]: https://discourse.jupyter.org/t/jupyter-vs-marimo/28422  
+- [5]: https://ep2025.europython.eu/session/meet-marimo-the-next-gen-notebook/  
+- [6]: https://docs.marimo.io/faq/  
+- [7]: https://www.reddit.com/r/Python/comments/1dvs2d6/reactive_notebook_for_python_an_alternative_to/  
+- [8]: https://docs.marimo.io/guides/coming_from/jupyter/  
+- [9]: https://www.linkedin.com/posts/reuven_python-notebooks-marimo-vs-jupyter-activity-7318306191527362560-KUxu
 
-If you have any kind of questions, or if you find some errors, or you have suggestions for improvements, feel free to contact me.      
-
-
-
-### Contents
-
-1.1) **Black-Scholes numerical methods**
-*(lognormal distribution, change of measure, Monte Carlo, Binomial method)*.
-
-1.2) **SDE simulation and statistics**
-*(paths generation, Confidence intervals, Hypothesys testing, Geometric Brownian motion, Cox-Ingersoll-Ross process, Euler Maruyama method, parameters estimation)*
-
-1.3) **Fourier inversion methods**
-*(inversion formula, numerical inversion, option pricing, FFT, Lewis formula)*
-
-1.4) **SDE, Heston model**
-*(correlated Brownian motions, Heston paths, Heston distribution, characteristic function, option pricing)*
-
-1.5) **SDE, Lévy processes** 
-*(Merton, Variance Gamma, NIG, path generation, parameter estimation)*
-
-2.1) **The Black-Scholes PDE** 
-*(PDE discretization, Implicit method, sparse matrix tutorial)*
-
-2.2) **Exotic options**
-*(Binary options, Barrier options, Asian options)*
-
-2.3) **American options**
-*(PDE, Early exercise, Binomial method, Longstaff-Schwartz, Perpetual put)*
-
-3.1) **Merton Jump-Diffusion PIDE**
-*(Implicit-Explicit discretization, discrete convolution, model limitations, Monte Carlo, Fourier inversion, semi-closed formula )*
-
-3.2) **Variance Gamma PIDE**
-*(approximated jump-diffusion PIDE, Monte Carlo, Fourier inversion, Comparison with Black-Scholes)*
-
-3.3) **Normal Inverse Gaussian PIDE** 
-*(approximated jump-diffusion PIDE, Monte Carlo, Fourier inversion, properties of the Lévy measure)*
-
-4.1) **Pricing with transaction costs** 
-*(Davis-Panas-Zariphopoulou model, singular control problem, HJB variational inequality, indifference pricing, binomial tree, performances)*
-
-4.2) **Volatility smile and model calibration**
-*(Volatility smile, root finder methods, calibration methods)*
-
-5.1) **Linear regression and Kalman filter** 
-*(market data cleaning, Linear regression methods, Kalman filter design, choice of parameters)*
-
-5.2) **Kalman auto-correlation tracking - AR(1) process** 
-*(Autoregressive process, estimation methods, Kalman filter, Kalman smoother, variable autocorrelation tracking)*
-
-5.3) **Volatility tracking** 
-*(Heston simulation, hypothesis testing, distribution fitting, estimation methods, GARCH(1,1), Kalman filter, Kalman smoother)*
-
-6.1) **Ornstein-Uhlenbeck process and applications**
-*(parameters estimation, hitting time, Vasicek PDE, Kalman filter, trading strategy)*
-
-7.1) **Classical MVO**
-*(mean variance optimization, quadratic programming, only long and long-short, closed formula)*
-
-A.1) **Appendix: Linear equations** 
-*(LU, Jacobi, Gauss-Seidel, SOR, Thomas)*
-  
-A.2) **Appendix: Code optimization** 
-*(cython, C code)*
-
-A.3) **Appendix: Review of Lévy processes theory**
-*(basic and important definitions, derivation of the pricing PIDE)*
-
-
-
-## How to run the notebooks 
-
-
-**Virtual environment:**
-
-Here I explain how to create a virtual environment with [Anaconda](https://www.anaconda.com/distribution/) and with the python module [venv](https://docs.python.org/3.7/tutorial/venv.html). 
-
-- Option 1:
-
-You can recreate my tested conda virtual environment with:
-
-```bash
-conda env create -f environment.yml
-pip install -e .
-```
-
-The first line recreates the virtual environment and installs all the packages.    
-With the second line we just install the local package `FMNM`.
-
-- Option 2:
-
-If you want to create a new environment with the latest python version, you can do: 
-
-```bash
-conda create -n FMNM python
-conda activate FMNM
-PACKAGES=$(tr '\n' ' ' < list_of_packages.txt | sed "s/arch/arch-py/g")
-conda install ${PACKAGES[@]}
-pip install -e .
-```
-
-where in the third line we replace the package name `arch` with the `arch-py`, which is the name used by conda.   
-
-- Option 3:
-
-If you prefer to create a `venv` that uses python 3.11.4, you can do it as follows:
-
-```bash
-python3.11.4 -m venv --prompt FMNM python-venv
-source python-venv/bin/activate
-python3 -m pip install --upgrade pip
-pip install --requirement requirements.txt
-pip install -e .
-```
-
-- Option 4:
-
-If you prefer to use the python version already installed in your system, you just need to run     
-
-```bash
-pip install --requirement list_of_packages.txt
-pip install -e .
-```     
-
-and then enter in the shell `jupyter-notebook` or `jupyter-lab`:
-
-
-However, if you are using old versions, there could be compatibility problems.
-
-**Docker:**
-
-Here we run the notebooks with jupyterlab:
-
-- Option 1:
-
-You can use docker-compose to build a container:
-
-```bash
-docker-compose up --build -d
-```
-
-And then stop the container with
-
-```bash
-docker-compose down
-```
-
-And open the browser at `http://localhost:8888/lab`
-
-- Option 2:
-
-Alternatively, you can
-
-```bash
-docker build -t fmnm .
-docker run --rm -d -p 8888:8888 --name Numeric_Finance fmnm
-```
-
-### Enjoy!
